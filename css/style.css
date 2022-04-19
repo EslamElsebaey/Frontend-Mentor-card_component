@@ -1,0 +1,78 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: var(--bs-gutter-x,1.4rem);
+    padding-left: var(--bs-gutter-x,1.4rem);
+}
+.myCard{
+    padding: 23px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+.myCard h3{
+   color: hsl(0, 0%, 100%) ;
+   font-size: 18px;
+   cursor: pointer;
+    transition: all ease .3s;
+}
+.myCard h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+.myCard .card-paragraph {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+}
+.card-img{
+    cursor: pointer;
+}
+.card-img:hover .overlay{
+    opacity: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247 ,  0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease .5s;
+    border-radius: 8px;
+}
+.overlay img{
+    transform: translate(-50% , -50%);
+}
+.card-img img , .card-img{
+     border-radius: 8px;
+}
+.card-desc img {
+     margin-right: 8px;
+}
+.card-desc {
+    border-bottom: 1px solid hsl(216, 60%, 41%);
+}
+.left span {
+    color:hsl(178, 100%, 50%);
+}
+.right span {
+    color: hsl(215, 51%, 70%);
+}
+.card-img-sm img{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%)  ;
+    margin-right: 15px;
+}
+.card-img-sm span {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+.card-img-sm span  a {
+    color: hsl(0, 0%, 100%) ;
+    transition: all ease .3s;
+}
+.card-img-sm span a:hover{
+    color: hsl(178, 100%, 50%);
+}
